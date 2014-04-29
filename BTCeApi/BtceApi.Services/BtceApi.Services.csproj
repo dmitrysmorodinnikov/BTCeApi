@@ -43,15 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActiveOrders\ActiveOrdersService.cs" />
     <Compile Include="ArgsDictionaryService.cs" />
     <Compile Include="BtceApiHttpClient.cs" />
-    <Compile Include="CancelOrder\CancelOrderService.cs" />
-    <Compile Include="GetInfo\GetInfoService.cs" />
+    <Compile Include="BtceModelsConverter.cs" />
+    <Compile Include="BtceService.cs" />
+    <Compile Include="IBtceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TradeHistory\TradeHistoryService.cs" />
-    <Compile Include="Trade\TradeService.cs" />
-    <Compile Include="TransactionsHistory\TransactionsHistoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BtceApi.Models\BtceApi.Models.csproj">

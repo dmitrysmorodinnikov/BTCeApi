@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="ActiveOrders\BtceResponseModel\ActiveOrdersBtceResponseModel.cs" />
     <Compile Include="ActiveOrders\Model\ActiveOrdersModel.cs" />
-    <Compile Include="ActiveOrders\Model\Order.cs" />
     <Compile Include="CancelOrder\BtceResponseModel\CancelOrderBtceResponseModel.cs" />
     <Compile Include="CancelOrder\Model\CancelOrderModel.cs" />
     <Compile Include="GetInfo\BtceResponseModel\GetInfoBtceResponseModel.cs" />

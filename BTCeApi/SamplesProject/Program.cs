@@ -18,16 +18,19 @@ namespace SamplesProject
         {
             var apiSecret = "Your_Secret";
             var apiKey = "Your_Key";
-            var btce = new BTCeApi.Btce(apiKey,apiSecret);
+            var btce = new Btce(apiKey,apiSecret);
             //var info = btce.GetInfo();
 
-            //var activeOrders = btce.ActiveOrders(Pair.Btc_Usd);
+            //var activeOrders = btce.ActiveOrders(Pair.btc_usd);
 
             //var transactionsHistory = btce.TransactionsHistory();
 
            // var tradeHistory = btce.TradeHistory();
 
-            //var res = transactionsHistory;
+           // var trade = btce.Trade(Pair.btc_usd, OperationType.buy, 10.1, 1.1);
+
+           // var cancelOrder = btce.CancelOrder(222052617);
+           
         }
     }
 }

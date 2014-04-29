@@ -5,6 +5,7 @@ namespace BtceApi.Models.TransactionsHistory.BtceResponseModel
     public class TransactionsHistoryBtceResponseModel
     {
         public bool Success { get; set; }
+        public string Error { get; set; }
         public Dictionary<string, BtceResponseTransaction> Return { get; set; }
     }
 

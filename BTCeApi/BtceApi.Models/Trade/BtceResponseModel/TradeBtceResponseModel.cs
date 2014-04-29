@@ -3,6 +3,7 @@
     public class TradeBtceResponseModel
     {
         public bool Success { get; set; }
+        public string Error { get; set; }
         public BtceResponseTradeItem Return { get; set; }
     }
 

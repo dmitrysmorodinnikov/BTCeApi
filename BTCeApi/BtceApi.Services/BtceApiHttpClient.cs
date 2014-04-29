@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
@@ -18,7 +19,8 @@ namespace BtceApi.Services
             _key = key;
             _hashMaker = new HMACSHA512(Encoding.UTF8.GetBytes(secret));
         }
-        public WebResponse SendRequest(Dictionary<string,string>argsDictionary)
+
+        public TResult SendRequest<TResult>(Dictionary<string, string> argsDictionary)
         {
             var request = (HttpWebRequest)WebRequest.Create(ServerUrl);
             var postDataStr = BuildPostData(argsDictionary);
@@ -30,25 +32,30 @@ namespace BtceApi.Services
             request.ContentLength = postData.Length;
             request.Headers.Add("Key", _key);
             request.Headers.Add("Sign", GetDataSignature(postData));
-            
+
             using (var requestStream = request.GetRequestStream())
             {
                 requestStream.Write(postData, 0, postData.Length);
             }
-
-            return request.GetResponse();
+            string responseStr = string.Empty;
+            using (var responseStream = request.GetResponse().GetResponseStream())
+            {
+                if (responseStream != null)
+                    responseStr = new StreamReader(responseStream).ReadToEnd();
+            }
+            return ServiceStack.Text.JsonSerializer.DeserializeFromString<TResult>(responseStr);
         }
 
-        private string BuildPostData(Dictionary<string, string> argsDictionary)
+        private static string BuildPostData(Dictionary<string, string> argsDictionary)
         {
-            StringBuilder s = new StringBuilder();
+            var sb = new StringBuilder();
             foreach (var item in argsDictionary)
             {
-                s.AppendFormat("{0}={1}", item.Key, HttpUtility.UrlEncode(item.Value));
-                s.Append("&");
+                sb.AppendFormat("{0}={1}", item.Key, HttpUtility.UrlEncode(item.Value));
+                sb.Append("&");
             }
-            if (s.Length > 0) s.Remove(s.Length - 1, 1);
-            return s.ToString(); 
+            if (sb.Length > 0) sb.Remove(sb.Length - 1, 1);
+            return sb.ToString(); 
         }
 
         private string GetDataSignature(byte[] postData)

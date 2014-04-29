@@ -4,6 +4,8 @@ namespace BtceApi.Models.TradeHistory.Model
 {
     public class TradeHistoryModel
     {
+        public bool Success { get; set; }
+        public string ErrorMessage { get; set; }
         public ICollection<TradeInfo> Trades { get; set; } 
     }
 

@@ -3,6 +3,7 @@
     public class GetInfoBtceResponseModel
     {
        public bool Success { get; set; }
+       public string Error { get; set; }
        public Return Return { get; set; }
     }
 

@@ -3,6 +3,7 @@
     public class CancelOrderBtceResponseModel
     {
         public bool Success { get; set; }
+        public string Error { get; set; }
         public CancelOrderBtceReturn Return { get; set; }
     }
 

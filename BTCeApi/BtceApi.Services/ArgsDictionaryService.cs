@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace BtceApi.Services
 {
@@ -61,14 +62,16 @@ namespace BtceApi.Services
 
        public static Dictionary<string, string> TradeDictionary(string pair, string type, double rate, double amount)
        {
+           NumberFormatInfo nfi = new NumberFormatInfo();
+           nfi.NumberGroupSeparator = ".";
            return new Dictionary<string, string>
            {
                {"method", "Trade"},
                {"nonce", GetNonce()},
                {"pair", pair},
                {"type", type},
-               {"rate", rate.ToString()},
-               {"amount", amount.ToString()}
+               {"rate", rate.ToString(nfi)},
+               {"amount", amount.ToString(nfi)}
            };
        }
 

@@ -5,6 +5,7 @@ namespace BtceApi.Models.ActiveOrders.BtceResponseModel
     public class ActiveOrdersBtceResponseModel
     {
         public bool Success { get; set; }
+        public string Error { get; set; }
         public Dictionary<string, BtceResponseOrder> Return { get; set; }
     }
 

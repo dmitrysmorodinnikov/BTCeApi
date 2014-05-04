@@ -9,5 +9,4 @@ Because of good design and clean natural object oriented approach, the library i
 I guess it can save some time for developers who are implementing their own trading strategies. You can easily build
 your strategy with this library as the base.
 
-Code examples
 You can look for code examples in SamplesProject which is a part of the solution.

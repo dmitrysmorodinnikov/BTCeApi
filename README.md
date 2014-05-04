@@ -11,9 +11,32 @@ your strategy with this library as the base.
 
 You can look for code examples in SamplesProject which is a part of the solution.
 
+Code examples
+==============
+To create an instance of BTCeApi:
+```
+var apiSecret = "Your_Secret";
+var apiKey = "Your_Key";
+var btce = new Btce(apiKey,apiSecret);
+```
+
+After creating an instance different API methods are available:
+```
+var info = btce.GetInfo();
+
+var activeOrders = btce.ActiveOrders(Pair.btc_usd);
+
+var transactionsHistory = btce.TransactionsHistory();
+
+var tradeHistory = btce.TradeHistory();
+
+var trade = btce.Trade(Pair.btc_usd, OperationType.buy, 10.1, 1.1);
+
+var cancelOrder = btce.CancelOrder(222052617);
+```
+========================
 If you find the library useful and would like to donate (and many thanks to those that have donated!), please send some
  coins here:
-
 
 
 ```

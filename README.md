@@ -11,6 +11,13 @@ your strategy with this library as the base.
 
 You can look for code examples in SamplesProject which is a part of the solution.
 
+Installation
+==============
+To install BtceAPI with Nuget, run the following command in the Package Manager Console
+```
+PM> Install-Package BtceAPI
+```
+
 Code examples
 ==============
 To create an instance of BTCeApi:

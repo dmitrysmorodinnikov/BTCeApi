@@ -5,6 +5,7 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
+using Newtonsoft.Json;
 
 namespace BtceApi.Services
 {
@@ -43,7 +44,7 @@ namespace BtceApi.Services
                 if (responseStream != null)
                     responseStr = new StreamReader(responseStream).ReadToEnd();
             }
-            return ServiceStack.Text.JsonSerializer.DeserializeFromString<TResult>(responseStr);
+            return JsonConvert.DeserializeObject<TResult>(responseStr);
         }
 
         private static string BuildPostData(Dictionary<string, string> argsDictionary)

@@ -52,6 +52,10 @@
       <Project>{DE0EA331-0839-4416-B57B-AAE4E2EC8FB0}</Project>
       <Name>BtceApi.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BtceApi.Services\BtceApi.Services.csproj">
+      <Project>{C2B258D4-5C6F-41A3-AEC4-E6729FB6A78E}</Project>
+      <Name>BtceApi.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BTCeApi\BTCeApi.csproj">
       <Project>{2077bdd7-d516-4b85-bbf2-f6a876a28505}</Project>
       <Name>BTCeApi</Name>

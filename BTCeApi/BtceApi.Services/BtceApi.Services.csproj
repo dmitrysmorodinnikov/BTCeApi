@@ -47,8 +47,12 @@
     <Compile Include="ArgsDictionaryService.cs" />
     <Compile Include="BtceApiHttpClient.cs" />
     <Compile Include="BtceModelsConverter.cs" />
-    <Compile Include="BtceService.cs" />
-    <Compile Include="IBtceService.cs" />
+    <Compile Include="BtcePublicApiService.cs" />
+    <Compile Include="BtceTradeApiService.cs" />
+    <Compile Include="CurrencyPair.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="IBtceTradeApiService.cs" />
+    <Compile Include="IBtcePublicApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

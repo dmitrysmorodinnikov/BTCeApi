@@ -1,16 +1,16 @@
 ﻿using System.Collections.ObjectModel;
-using BtceApi.Models.ActiveOrders.BtceResponseModel;
-using BtceApi.Models.ActiveOrders.Model;
-using BtceApi.Models.CancelOrder.BtceResponseModel;
-using BtceApi.Models.CancelOrder.Model;
-using BtceApi.Models.GetInfo.BtceResponseModel;
-using BtceApi.Models.GetInfo.Model;
-using BtceApi.Models.Trade.BtceResponseModel;
-using BtceApi.Models.Trade.Model;
-using BtceApi.Models.TradeHistory.BtceResponseModel;
-using BtceApi.Models.TradeHistory.Model;
-using BtceApi.Models.TransactionsHistory.BtceResponseModel;
-using BtceApi.Models.TransactionsHistory.Model;
+using BtceApi.Models.TradeApiModels.ActiveOrders.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.ActiveOrders.Model;
+using BtceApi.Models.TradeApiModels.CancelOrder.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.CancelOrder.Model;
+using BtceApi.Models.TradeApiModels.GetInfo.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.GetInfo.Model;
+using BtceApi.Models.TradeApiModels.Trade.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.Trade.Model;
+using BtceApi.Models.TradeApiModels.TradeHistory.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.TradeHistory.Model;
+using BtceApi.Models.TradeApiModels.TransactionsHistory.BtceResponseModel;
+using BtceApi.Models.TradeApiModels.TransactionsHistory.Model;
 
 namespace BtceApi.Services
 {

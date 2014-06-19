@@ -49,11 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BtceApi.Models\BtceApi.Models.csproj">
-      <Project>{DE0EA331-0839-4416-B57B-AAE4E2EC8FB0}</Project>
+      <Project>{de0ea331-0839-4416-b57b-aae4e2ec8fb0}</Project>
       <Name>BtceApi.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\BtceApi.Services\BtceApi.Services.csproj">
-      <Project>{C2B258D4-5C6F-41A3-AEC4-E6729FB6A78E}</Project>
+      <Project>{c2b258d4-5c6f-41a3-aec4-e6729fb6a78e}</Project>
       <Name>BtceApi.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\BTCeApi\BTCeApi.csproj">

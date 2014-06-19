@@ -12,7 +12,7 @@ namespace SamplesProject
             var apiKey = "Your_Key";
             var btce = new Btce(apiKey,apiSecret);
 
-           // var depth = btce.GetInfo();
+            var depth = btce.BtcUsd.CurrencyPair;
             //var t = depth;
             //var info = btce.GetInfo();
 

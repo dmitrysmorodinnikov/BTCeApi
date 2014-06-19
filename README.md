@@ -40,6 +40,8 @@ var tradeHistory = btce.TradeHistory();
 var trade = btce.Trade(Pair.btc_usd, OperationType.buy, 10.1, 1.1);
 
 var cancelOrder = btce.CancelOrder(222052617);
+
+var btcUsdFee = btce.BtcUsd.Fee();
 ```
 ========================
 If you find the library useful and would like to donate (and many thanks to those that have donated!), please send some

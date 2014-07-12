@@ -58,3 +58,4 @@ BTC 1C1eyDwrPrfzRHir54euX1kmiGAMz29c7x
 Author
 ========
 <a href="https://twitter.com/federer_15" target=_blank title="Dmitry Smorodinnikov">@federer_15</a>
+<a href="http://smorodinnikov.com" target=_blank title="Dmitry Smorodinnikov">My Blog</a>

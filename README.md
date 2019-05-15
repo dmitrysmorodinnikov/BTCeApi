@@ -54,8 +54,3 @@ LTC LfuExh8hoJVpqvfbxtA6hmtrkz8fzmLvhb
 BTC 1C1eyDwrPrfzRHir54euX1kmiGAMz29c7x
 
 ```
-
-Author
-========
-<a href="https://twitter.com/d_smorodinnikov" target=_blank title="My Twitter">My Twitter</a><br/>
-<a href="http://smorodinnikov.com" target=_blank title="Dmitry Smorodinnikov">My Blog</a>
